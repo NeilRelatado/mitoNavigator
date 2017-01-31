@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="mitoNavigator.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>BaeWatch Beta (Release 1.0)</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<form style="font-family:Calibri" runat="server">
+    <Content>
+    
+ 
+ <div style="background:#7ac141; font-family:Calibri;">  
+     <img src="pics/mitoLogo.png" style="font-family:Calibri;font-size:xx-large;background-color:black" runat="server" >
+      <br />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"   >
+
+            <asp:Panel ID="panel1" runat="server" >
+<b style="font-family:Calibri;font-size:xx-large;color:#7c6954">
+    <br />
+    mitoNavigator</b>
+                <br />
+
+
+           <asp:LinkButton runat="server" style="color:#7c6954">Home </asp:LinkButton> &nbsp;
+            <asp:LinkButton runat="server" style="color:#7c6954">Disease List </asp:LinkButton> &nbsp;
+            <asp:LinkButton runat="server" style="color:#7c6954">Reasources </asp:LinkButton>
+
+        </asp:Panel>
+
+
+     
+            
+        
+        </asp:ContentPlaceHolder>
+    </div>
+</Content>
+            
+      
+<asp:ContentPlaceHolder ID="Body" runat="server"></asp:ContentPlaceHolder>
+</form>
+</html>
