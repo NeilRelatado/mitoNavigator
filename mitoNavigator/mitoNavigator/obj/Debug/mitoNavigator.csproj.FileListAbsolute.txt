@@ -5,3 +5,11 @@ C:\Users\Neil\Documents\ssis\mitoNavigator\mitoNavigator\bin\mitoNavigator.pdb
 C:\Users\Neil\Documents\ssis\mitoNavigator\mitoNavigator\obj\Debug\mitoNavigator.Properties.Resources.resources
 C:\Users\Neil\Documents\ssis\mitoNavigator\mitoNavigator\obj\Debug\mitoNavigator.dll
 C:\Users\Neil\Documents\ssis\mitoNavigator\mitoNavigator\obj\Debug\mitoNavigator.pdb
+C:\Users\Neil\Documents\mitoNavigator\mitoNavigator\mitoNavigator\bin\mitoNavigator.dll.config
+C:\Users\Neil\Documents\mitoNavigator\mitoNavigator\mitoNavigator\bin\mitoNavigator.dll
+C:\Users\Neil\Documents\mitoNavigator\mitoNavigator\mitoNavigator\bin\mitoNavigator.pdb
+C:\Users\Neil\Documents\mitoNavigator\mitoNavigator\mitoNavigator\obj\Debug\mitoNavigator.csprojResolveAssemblyReference.cache
+C:\Users\Neil\Documents\mitoNavigator\mitoNavigator\mitoNavigator\obj\Debug\mitoNavigator.Properties.Resources.resources
+C:\Users\Neil\Documents\mitoNavigator\mitoNavigator\mitoNavigator\obj\Debug\mitoNavigator.csproj.GenerateResource.Cache
+C:\Users\Neil\Documents\mitoNavigator\mitoNavigator\mitoNavigator\obj\Debug\mitoNavigator.dll
+C:\Users\Neil\Documents\mitoNavigator\mitoNavigator\mitoNavigator\obj\Debug\mitoNavigator.pdb
