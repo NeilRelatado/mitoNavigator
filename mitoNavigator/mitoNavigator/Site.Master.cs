@@ -11,8 +11,18 @@ namespace mitoNavigator
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //logo.ImageMap = 
-            //logo.bitmap=Properties.Resources.Mito_Canada_logo_tag_web2;
+            
+        }
+
+        protected void btnHome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/home.aspx"); 
+        }
+
+        protected void PTD_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Policy.aspx");
+
         }
 
 
