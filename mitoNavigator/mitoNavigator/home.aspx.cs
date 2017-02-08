@@ -13,5 +13,20 @@ namespace mitoNavigator
         {
 
         }
+
+        protected void Unnamed1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/GIN_WhatiTheMitocondra.aspx"); 
+        }
+
+        protected void Unnamed2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/GIN_MitoDisease.aspx"); 
+        }
+
+        protected void Unnamed3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/GIN_whoismitocanada.aspx"); 
+        }
     }
 }

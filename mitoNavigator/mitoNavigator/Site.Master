@@ -4,29 +4,28 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>mitoAdvisor</title>
+    <title>mitoNavigator</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 
-<form style="font-family:Calibri" runat="server">
+<form style="font-family:Calibri;" runat="server">
     <Content>
     
  
- <div style="background:#7ac141; font-family:Calibri;">  
-     <img src="pics/mitoLogo.png" style="font-family:Calibri;font-size:xx-large;background-color:black" runat="server" >
-      <br />
+ <div style=" font-family:Calibri;">  
+     &nbsp;<img src="pics/Mito_Canada_logo_webtitle-no backgroud2.png" style="font-size:4000px; height: 110px; width: 610px; text-align:center" runat="server" ><br />
 
-      <asp:Panel ID="panel2" runat="server" >
+      <asp:Panel ID="panel2" runat="server" style="text-align:center;background:#7ac141;">
 <b style="font-family:Calibri;font-size:xx-large;color:#7c6954">
     <br />
     mitoNavigator</b>
                 <br />
 
 
-           <asp:LinkButton ID="LinkButton1" runat="server" style="color:#7c6954" OnClick="btnHome_Click">Home </asp:LinkButton> &nbsp;
-            <asp:LinkButton runat="server" style="color:#7c6954">Disease List </asp:LinkButton> &nbsp;
-            <asp:LinkButton runat="server" style="color:#7c6954">Reasources </asp:LinkButton>&nbsp;
+           <asp:LinkButton ID="LinkButton1" runat="server" style="color:white" OnClick="btnHome_Click">Home </asp:LinkButton> &nbsp;
+            <asp:LinkButton runat="server" style="color:white">Disease List </asp:LinkButton> &nbsp;
+            <asp:LinkButton runat="server" style="color:white">Reasources </asp:LinkButton>&nbsp;
           
 
         </asp:Panel>
@@ -38,6 +37,7 @@
 <asp:ContentPlaceHolder ID="Body" runat="server"></asp:ContentPlaceHolder>
     
   <footer>
+      <br />
 <asp:LinkButton ID="PTD" runat="server" style="color:#7c6954; font-size:small" OnClick="PTD_Click">Privacy Policy & Terms and Conditons  </asp:LinkButton>
       </footer>
 

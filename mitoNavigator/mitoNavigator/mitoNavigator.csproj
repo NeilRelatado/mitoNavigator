@@ -57,6 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GIN_MitoDisease.aspx" />
+    <Content Include="GIN_WhatiTheMitocondra.aspx" />
+    <Content Include="GIN_whoismitocanada.aspx" />
+    <Content Include="pics\mitochondria_1050x700.jpg" />
+    <Content Include="pics\Mito_Canada_logo_webtitle-no backgroud2.png" />
+    <Content Include="pics\Mito_Canada_logo_webtitle.jpg" />
     <Content Include="Policy.aspx" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
@@ -74,6 +80,27 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GIN_MitoDisease.aspx.cs">
+      <DependentUpon>GIN_MitoDisease.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GIN_MitoDisease.aspx.designer.cs">
+      <DependentUpon>GIN_MitoDisease.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GIN_WhatiTheMitocondra.aspx.cs">
+      <DependentUpon>GIN_WhatiTheMitocondra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GIN_WhatiTheMitocondra.aspx.designer.cs">
+      <DependentUpon>GIN_WhatiTheMitocondra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GIN_whoismitocanada.aspx.cs">
+      <DependentUpon>GIN_whoismitocanada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GIN_whoismitocanada.aspx.designer.cs">
+      <DependentUpon>GIN_whoismitocanada.aspx</DependentUpon>
+    </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
