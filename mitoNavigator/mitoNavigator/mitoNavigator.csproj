@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DiseaseList.aspx" />
     <Content Include="GIN_MitoDisease.aspx" />
     <Content Include="GIN_WhatiTheMitocondra.aspx" />
     <Content Include="GIN_whoismitocanada.aspx" />
@@ -80,6 +81,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DiseaseList.aspx.cs">
+      <DependentUpon>DiseaseList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DiseaseList.aspx.designer.cs">
+      <DependentUpon>DiseaseList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GIN_MitoDisease.aspx.cs">
       <DependentUpon>GIN_MitoDisease.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

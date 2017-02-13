@@ -24,7 +24,7 @@
 
 
            <asp:LinkButton ID="LinkButton1" runat="server" style="color:white" OnClick="btnHome_Click">Home </asp:LinkButton> &nbsp;
-            <asp:LinkButton runat="server" style="color:white">Disease List </asp:LinkButton> &nbsp;
+            <asp:LinkButton runat="server" style="color:white" OnClick="Unnamed1_Click">Disease List </asp:LinkButton> &nbsp;
             <asp:LinkButton runat="server" style="color:white">Reasources </asp:LinkButton>&nbsp;
           
 
@@ -38,7 +38,19 @@
     
   <footer>
       <br />
-<asp:LinkButton ID="PTD" runat="server" style="color:#7c6954; font-size:small" OnClick="PTD_Click">Privacy Policy & Terms and Conditons  </asp:LinkButton>
+      <div style="float:left;font-size:x-small">
+          <p>
+
+MItoCanada Foundation<br />
+300 - 3310 South Services Road,
+Burlington, Ontario, Canada L7N 3M6<br />
+1-877-708-6486 (MITO)<br />
+info@mitocanada.org<br />
+Charity Business N° 81258 6667 RR0001
+</p>
+           
+      </div>
+ <asp:LinkButton ID="PTD" runat="server" style="color:#7c6954; font-size:small" OnClick="PTD_Click">Privacy Policy & Terms and Conditons  </asp:LinkButton>
       </footer>
 
 </form>
