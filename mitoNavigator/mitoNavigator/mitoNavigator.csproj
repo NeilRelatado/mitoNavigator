@@ -64,6 +64,7 @@
     <Content Include="pics\mitochondria_1050x700.jpg" />
     <Content Include="pics\Mito_Canada_logo_webtitle-no backgroud2.png" />
     <Content Include="pics\Mito_Canada_logo_webtitle.jpg" />
+    <Content Include="pics\relayhealth_logo_transparent.png" />
     <Content Include="Policy.aspx" />
     <Content Include="Reasources.aspx" />
     <Content Include="Site.Master" />

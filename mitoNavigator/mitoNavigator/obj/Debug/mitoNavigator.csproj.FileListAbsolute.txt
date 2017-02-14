@@ -12,3 +12,4 @@ C:\Users\Neil\Documents\mitoNavigator\mitoNavigator\mitoNavigator\obj\Debug\mito
 C:\Users\Neil\Documents\mitoNavigator\mitoNavigator\mitoNavigator\obj\Debug\mitoNavigator.csproj.GenerateResource.Cache
 C:\Users\Neil\Documents\mitoNavigator\mitoNavigator\mitoNavigator\obj\Debug\mitoNavigator.dll
 C:\Users\Neil\Documents\mitoNavigator\mitoNavigator\mitoNavigator\obj\Debug\mitoNavigator.pdb
+C:\Users\Neil\Documents\mitoNavigator\mitoNavigator\mitoNavigator\obj\Debug\mitoNavigator.csprojResolveAssemblyReference.cache
