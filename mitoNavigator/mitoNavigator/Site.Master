@@ -25,12 +25,26 @@
 
            <asp:LinkButton ID="LinkButton1" runat="server" style="color:white" OnClick="btnHome_Click">Home </asp:LinkButton> &nbsp;
             <asp:LinkButton runat="server" style="color:white" OnClick="Unnamed1_Click">Disease List </asp:LinkButton> &nbsp;
-            <asp:LinkButton runat="server" style="color:white">Reasources </asp:LinkButton>&nbsp;
+            <asp:LinkButton runat="server" style="color:white" OnClick="Unnamed2_Click">Reasources </asp:LinkButton>&nbsp;
           
 
         </asp:Panel>
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </Content>
             
     
@@ -51,6 +65,10 @@ Charity Business N° 81258 6667 RR0001
            
       </div>
  <asp:LinkButton ID="PTD" runat="server" style="color:#7c6954; font-size:small" OnClick="PTD_Click">Privacy Policy & Terms and Conditons  </asp:LinkButton>
+      &nbsp;<asp:HyperLink style="color:#7c6954; font-size:small" ID = "HyperLink1" runat=server Text="Donate"
+	NavigateUrl="https://www.canadahelps.org/dn/10086" >
+	</asp:HyperLink>
+
       </footer>
 
 </form>

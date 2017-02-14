@@ -30,6 +30,11 @@ namespace mitoNavigator
             Response.Redirect("~/DiseaseList.aspx");
         }
 
+        protected void Unnamed2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Reasources.aspx");
+        }
+
 
     }
 }
