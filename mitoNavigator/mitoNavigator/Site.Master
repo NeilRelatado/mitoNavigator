@@ -50,9 +50,9 @@
     
 <asp:ContentPlaceHolder ID="Body" runat="server"></asp:ContentPlaceHolder>
     
-  <footer>
+  <footer style=" position: fixed;bottom: -36px;">
       <br />
-      <div style="float:left;font-size:x-small">
+      <div style="float:left;font-size:x-small;color:#7c6954;">
           <p>
 
 MItoCanada Foundation<br />

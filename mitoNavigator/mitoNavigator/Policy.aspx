@@ -107,4 +107,6 @@ The MitoCanada Foundation may grant the owner of a site permission to use a hype
 <p>
 The MitoCanada Foundation is committed to maintaining the confidentiality of your personal information in all of our activities and programs. Every reasonable effort will be made to maintain the security of all personal information in our possession. Access to personal information will be limited Board members and officers and to individuals who have a need to use such information in the course of their work on approved projects for, and overseen by the MitoCanada Foundation, and who have been instructed in the confidentiality requirements of the organization.
 </p>
+<br />
+<br />
 </asp:Content>
