@@ -53,7 +53,8 @@
         <br />
         <asp:linkbutton runat="server" style="color:#7c6954;font-size:medium" OnClick="Unnamed1_Click">What is the Mitocondria</asp:linkbutton> <br />
         <asp:linkbutton runat="server" style="color:#7c6954;font-size:medium" OnClick="Unnamed2_Click">Mitochondrial Disease / Dysfunction and Perserving Mitochondrial Health</asp:linkbutton> <br />
-        <asp:linkbutton runat="server" style="color:#7c6954;font-size:medium" OnClick="Unnamed3_Click">Who are we? </asp:linkbutton>
+        <asp:linkbutton runat="server" style="color:#7c6954;font-size:medium" OnClick="Unnamed3_Click">Who are we? </asp:linkbutton><br />
+        <asp:linkbutton runat="server" style="color:#7c6954;font-size:medium" OnClick="Unnamed4_Click">Genetics and Mitocondrial disease </asp:linkbutton><br />
     </p>
     
 

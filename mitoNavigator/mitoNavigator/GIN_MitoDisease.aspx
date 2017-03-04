@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="server">
-<div style="text-align:center">
+    <div style="text-align:center">
  <b style="font-size:xx-large">Mitochondrial Disease / Dysfunction and Perserving Mitochondrial Health</b>
 <p style="text-align:left">
   &nbsp   &nbsp   &nbsp   &nbsp  The term mitochondrial disease covers a multitude of heterogenous disease that are linked clinically and biochemically. There is a primary genetic disease and secondary mitochondrial disease where there is evidence of mitochondrial dysfunction. These are but not limited 10 neurodegenerative, later-onset diseases like ALS, Alzheimer’s ,Parkinson’s disease, and Type 2 diabetes. There is growing evidence that virtually any disease may have some mitochondrial dysfunction because the mitochondria is so critical to metabolism 

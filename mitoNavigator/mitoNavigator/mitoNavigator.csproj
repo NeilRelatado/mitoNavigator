@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DiseaseList.aspx" />
+    <Content Include="Genetics.aspx" />
     <Content Include="GIN_MitoDisease.aspx" />
     <Content Include="GIN_WhatiTheMitocondra.aspx" />
     <Content Include="GIN_whoismitocanada.aspx" />
@@ -89,6 +90,13 @@
     </Compile>
     <Compile Include="DiseaseList.aspx.designer.cs">
       <DependentUpon>DiseaseList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Genetics.aspx.cs">
+      <DependentUpon>Genetics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Genetics.aspx.designer.cs">
+      <DependentUpon>Genetics.aspx</DependentUpon>
     </Compile>
     <Compile Include="GIN_MitoDisease.aspx.cs">
       <DependentUpon>GIN_MitoDisease.aspx</DependentUpon>
