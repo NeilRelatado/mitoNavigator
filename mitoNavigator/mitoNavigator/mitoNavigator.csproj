@@ -62,6 +62,7 @@
     <Content Include="GIN_MitoDisease.aspx" />
     <Content Include="GIN_WhatiTheMitocondra.aspx" />
     <Content Include="GIN_whoismitocanada.aspx" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="pics\mitochondria_1050x700.jpg" />
     <Content Include="pics\Mito_Canada_logo_webtitle-no backgroud2.png" />
     <Content Include="pics\Mito_Canada_logo_webtitle.jpg" />

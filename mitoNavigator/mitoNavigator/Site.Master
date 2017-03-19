@@ -50,30 +50,37 @@
     
 <asp:ContentPlaceHolder ID="Body" runat="server"></asp:ContentPlaceHolder>
     
-  <footer style=" position: fixed;bottom: -12px;">
+  <footer style="position: fixed;bottom: -12px;background-color:#7ac141;">
       <br />
       <div style="float:left;font-size:small;color:#7c6954;">
           <p>
 <b>
 
-
+MItoCanada Foundation &nbsp
+300 - 3310 South Services Road,
+Burlington, Ontario, Canada L7N 3M6&nbsp
+1-877-708-6486 (MITO)&nbsp
+info@mitocanada.org&nbsp
+Charity Business N° 81258 6667 RR0001&nbsp
 
 
 </b>
-MItoCanada Foundation<br />
-300 - 3310 South Services Road,
-Burlington, Ontario, Canada L7N 3M6<br />
-1-877-708-6486 (MITO)<br />
-info@mitocanada.org<br />
-Charity Business N° 81258 6667 RR0001
+
 </p>
            
+
+
+
+
+
+
+
+
       </div>
- <asp:LinkButton ID="PTD" runat="server" style="color:#7c6954; font-size:small" OnClick="PTD_Click">Privacy Policy & Terms and Conditons  </asp:LinkButton>
+ &nbsp<asp:LinkButton ID="PTD" runat="server" style="color:#7c6954; font-size:small" OnClick="PTD_Click">Privacy Policy & Terms and Conditons  </asp:LinkButton>
       &nbsp;<asp:HyperLink style="color:#7c6954; font-size:small" ID = "HyperLink1" runat=server Text="Donate"
 	NavigateUrl="https://www.canadahelps.org/dn/10086" >
 	</asp:HyperLink>
-
       </footer>
 
 </form>

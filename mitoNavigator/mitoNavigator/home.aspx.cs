@@ -33,5 +33,9 @@ namespace mitoNavigator
         {
             Response.Redirect("~/Genetics.aspx"); 
         }
+        protected void Unnamed5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/HtmlPage1.html");
+        }
     }
 }

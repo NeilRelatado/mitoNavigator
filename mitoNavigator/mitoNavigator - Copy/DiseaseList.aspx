@@ -14,27 +14,21 @@
     <div style="text-align:center">
 
 <b style="font-size:x-large">Welcome to the disease list </b><br />
-    <p>Select a primary mitocondrial disease from the dropdown list below to learn more about it.<br />
-    <b>Disclaimer: The purpose of this website is to educate. If you believe that you or a loved one is suffering from any of these diseases please contact your doctor</b>
-
-
-    </p>
+    <p>Select a primary mitocondrial disease from the dropdown list below to learn more about it.</p>
 
     <br />
     <b>Pick a disease  : </b>
-    <asp:dropdownlist runat="server" OnSelectedIndexChanged="Unnamed1_SelectedIndexChanged" ID="DiseaseListDrop">
-        <asp:ListItem Text="Alpers Disease" Value="1"></asp:ListItem>
-        <asp:ListItem Text="Friedreich Ataxia" Value="2"></asp:ListItem>
-        <asp:ListItem Text="Leigh Syndrome" Value="3"> </asp:ListItem>
-        <asp:ListItem Text="Luft Disease" Value="4"></asp:ListItem>
-        <asp:ListItem Text="MELAS" Value="5"></asp:ListItem>
-        <asp:ListItem Text="Menkes Disease" Value ="6"></asp:ListItem>
-        <asp:ListItem Text="MERRF" Value="7"></asp:ListItem>
-        <asp:ListItem Text="NARP" Value="8"></asp:ListItem>
-        <asp:ListItem Text="Mitochondrial Myopathy" Value="9"></asp:ListItem>
-         <asp:ListItem Text="MNGIE" Value="10"></asp:ListItem>
+    <asp:dropdownlist runat="server">
+        <asp:ListItem>Alpers Disease</asp:ListItem>
+        <asp:ListItem>Friedreich Ataxia</asp:ListItem>
+        <asp:ListItem>Leigh Syndrome </asp:ListItem>
+        <asp:ListItem>Luft Disease </asp:ListItem>
+        <asp:ListItem>MELAS</asp:ListItem>
+        <asp:ListItem>Menkes Disease </asp:ListItem>
+        <asp:ListItem>MERRF</asp:ListItem>
+        <asp:ListItem>MNGIE</asp:ListItem>
+        <asp:ListItem>NARP</asp:ListItem>
     </asp:dropdownlist>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Select" />
     <br />
     <div style="text-align:center">
  <table border="2">
@@ -63,8 +57,7 @@
         </td>
     </tr>
        </table>
-        <asp:Label ID="Source" runat="server"></asp:Label>
-        <asp:hyperlink ID="SourceLink" runat="server">Source </asp:hyperlink>
+
 
     </div>
       

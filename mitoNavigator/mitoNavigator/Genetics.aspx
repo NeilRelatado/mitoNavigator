@@ -29,6 +29,8 @@
     
 
     </p>
+        <asp:HyperLink style="color:#7c6954; font-size:small" ID = "HyperLink1" runat=server Text="Source"
+	NavigateUrl="http://www.mitocanada.org/about-mitochondrial-disease/how-is-mitochondrial-disease-inherited-2/" ></asp:HyperLink>        
 
 
 
@@ -50,6 +52,30 @@
 
 
 
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
     </div>
 
