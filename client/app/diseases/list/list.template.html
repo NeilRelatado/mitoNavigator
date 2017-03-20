@@ -1,0 +1,12 @@
+<h1>Diseases</h1>
+ <ul>
+   <li *ngFor="let disease of diseases">
+     <a [routerLink]="['/diseases', disease._id]">{{disease.name}}</a>
+     <br>
+     <small>{{disease.cost}}/{{disease.rating}</small>
+   </li>
+ </ul>
+
+ <div $*ngIf="diseases && diseases.length ===0">
+   No Diseases Yet
+ </div>

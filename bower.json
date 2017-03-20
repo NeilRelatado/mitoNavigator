@@ -1,0 +1,28 @@
+{
+  "name": "comp308-w2017-lesson8b-angular",
+  "description": "## Welcome to Lesson 8 - Intro to Angular 2 and MVC Revisited",
+  "main": "server.js",
+  "authors": [
+    "matt"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "NodeJS",
+    "ExpressJS",
+    "EJS"
+  ],
+  "homepage": "https://github.com/CentennialCollege/COMP308-W2017-Lesson8B-Angular",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/Scripts/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.4",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

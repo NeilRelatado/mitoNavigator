@@ -1,0 +1,23 @@
+<% include ../partials/header.ejs %>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+
+        <my-app>Loading AppComponent content here ...</my-app>
+
+          <h1><%= title %></h1>
+          <% if(displayName) { %>
+            <h2>Welcome <%= title %>, <%= displayName %></h2>
+          <% } else { %>
+            <h2>Welcome to <%= title %></h2>
+          <% } %>
+        </div>
+      </div>
+    </div>
+
+<% include ../partials/angular.ejs %>
+<% include ../partials/footer.ejs %>
+
+
