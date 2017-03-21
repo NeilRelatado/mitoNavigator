@@ -6,7 +6,7 @@ let diseasesSchema = mongoose.Schema({
     type: String,
     description: String,
     symptoms: String,
-    refrences: String
+    references: String
 },
 {
   collection: "diseases"

@@ -96,7 +96,7 @@ module.exports.RequireAdminAuth = (req, res, next) => {
   if(!req.isAuthenticated()) {
     return res.redirect('/users/login');
   }
-  else if (req.user.type != 'admin'){
+  else if (req.user.level != "Admin"){
      return res.redirect('/');
   }
   next();

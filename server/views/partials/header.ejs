@@ -34,7 +34,6 @@
           <li><a href="/"><i class="fa fa-home fa-lg"></i> Home</a></li>
         <% } %>
 
-        <% if(typeof displayName == 'string' && displayName) { %>
           <% if(title == "Diseases") { %>
           <li class="active"><a href="/diseases"><!--<i class="fa fa-diseasepad fa-lg">-->
           </i> Diseases List</a></li>
@@ -42,7 +41,7 @@
             <li><a href="/diseases"> <!--<i class="fa fa-diseasepad fa-lg">-->
             </i> Diseases List</a></li>
           <% } %>
-        <% } %>
+        
 
         <% if(title == "Contact") { %>
           <li class="active"><a href="/contact"><i class="fa fa-phone fa-lg"></i> Contact</a></li>

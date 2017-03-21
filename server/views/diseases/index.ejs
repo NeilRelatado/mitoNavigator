@@ -10,24 +10,42 @@
         <a href="/diseases/add" class="btn btn-primary"><i class="fa fa-plus"></i> Add a Disease</a>
         <br>
 
+        <select>
+            <option>Search</option>
+            <% if (diseases.length > 0) { %>
+              <% for (let count = 0; count < diseases.length; count++) { %>
+              <option id= <%= diseases[count]._id %> >
+                <%= diseases[count].name %>
+              </option>
+              <% } %>
+            <% } %>
+        </select>
 
         <table class="table table-bordered table-striped table-hover">
+         
           <tr>
-            <h class="text-center">Name</h>
+            <td><h class="text-center">Name</h></td>
+             <td></td>
+          </tr>
 
-            
-          </tr>
           <tr>
-            <h class="text-center">Type</h>
+           <td><h class="text-center">Type</h></td>
+           <td></td>
           </tr>
+
           <tr>
-            <h class="text-center">Description</h>
+            <td><h class="text-center">Description</h></td>
+            <td></td>
           </tr>
+
           <tr>
-            <h class="text-center">Symptoms</h>
+            <td><h class="text-center">Symptoms</h></td>
+            <td></td>
           </tr>
+
           <tr>
-            <h class="text-center">Refrences</h>
+            <td><h class="text-center">References</h></td>
+            <td></td>
           </tr>
 
 
@@ -47,7 +65,7 @@
                 <%= diseases[count].symptoms %>
               </td>
               <td class="text-center">
-                <%= diseases[count].refrences %>
+                <%= diseases[count].references %>
               </td>
 
               <td class="text-center">
@@ -58,9 +76,9 @@
                 <a href="/diseases/delete/<%= diseases[count]._id %>" class="btn btn-danger">
                   <i class="fa fa-trash-o"></i> Delete</a>
               </td>
-
             </tr>
             <% } %>
+
         </table>
       </div>
     </div>

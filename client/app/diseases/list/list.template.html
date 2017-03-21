@@ -3,7 +3,7 @@
    <li *ngFor="let disease of diseases">
      <a [routerLink]="['/diseases', disease._id]">{{disease.name}}</a>
      <br>
-     <small>{{disease.cost}}/{{disease.rating}</small>
+     <small>{{disease.type}}/{{disease.description}</small>
    </li>
  </ul>
 

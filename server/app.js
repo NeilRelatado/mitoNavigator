@@ -49,7 +49,7 @@ app.use(express.static(path.join(__dirname, '../node_modules')));
 
 // setup session
 app.use(session({
-  secret: "SomeSecret",
+  secret: "SessionGreatHollow",
   saveUninitialized: true,
   resave: true
 }));

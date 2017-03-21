@@ -26,7 +26,7 @@ module.exports.ReadDiseaseList = (req, res) => {
 // displays the Details page - allowing users to add a new Disease
 module.exports.DisplayAdd = (req, res) => {
   res.render('diseases/details', {
-    title: "Add a new Disease",
+    title: "Add a mitochondrial disease",
     diseases: '',
     displayName: req.user.displayName
   });
@@ -36,8 +36,10 @@ module.exports.DisplayAdd = (req, res) => {
 module.exports.CreateDisease = (req, res) => {
   let newDisease = disease({
       "name": req.body.name,
-      "cost": req.body.cost,
-      "rating": req.body.rating
+      "type": req.body.cost,
+      "description": req.body.rating,
+      "symptoms" : req.body.symptoms,
+      "references" : req.body.references
     });
 
     disease.create(newDisease, (err, disease) => {
@@ -85,8 +87,10 @@ module.exports.UpdateDisease = (req, res) => {
      let updatedDisease = disease({
        "_id": id,
       "name": req.body.name,
-      "cost": req.body.cost,
-      "rating": req.body.rating
+      "type": req.body.cost,
+      "description": req.body.rating,
+      "symptoms" : req.body.symptoms,
+      "references" : req.body.references
     });
 
     disease.update({_id: id}, updatedDisease, (err) => {

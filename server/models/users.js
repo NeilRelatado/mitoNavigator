@@ -38,10 +38,10 @@ let UserSchema = new Schema({
   updated: {
     type: Date,
     default: Date.now
-  }
-  type: {
+  },
+  level: {
     type: String,
-    default: 'User'
+    default: 'User',
     enum: ['Admin', 'GreaterAdmin', 'User']
   }
 },{
