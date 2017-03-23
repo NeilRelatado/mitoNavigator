@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="mitoNavigator.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>mitoNavigator</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<form style="font-family:Calibri;" runat="server">
+    <Content>
+    
+ 
+ <div style=" font-family:Calibri;">  
+     &nbsp;<img src="pics/Mito_Canada_logo_webtitle-no backgroud2.png" style="font-size:4000px; height: 110px; width: 610px; text-align:center" runat="server" ><br />
+
+      <asp:Panel ID="panel2" runat="server" style="text-align:center;background:#7ac141;">
+<b style="font-family:Calibri;font-size:xx-large;color:#7c6954">
+    <br />
+    mitoNavigator</b>
+                <br />
+
+
+           <asp:LinkButton ID="LinkButton1" runat="server" style="color:white" OnClick="btnHome_Click">Home </asp:LinkButton> &nbsp;
+            <asp:LinkButton runat="server" style="color:white" OnClick="Unnamed1_Click">Disease List </asp:LinkButton> &nbsp;
+            <asp:LinkButton runat="server" style="color:white" OnClick="Unnamed2_Click">Resources </asp:LinkButton>&nbsp;
+          
+
+        </asp:Panel>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Content>
+            
+    
+<asp:ContentPlaceHolder ID="Body" runat="server"></asp:ContentPlaceHolder>
+    
+  <footer style="position: fixed;bottom: -12px;background-color:#7ac141;">
+      <br />
+      <div style="float:left;font-size:small;color:#7c6954;">
+          <p>
+<b>
+
+MItoCanada Foundation &nbsp
+300 - 3310 South Services Road,
+Burlington, Ontario, Canada L7N 3M6&nbsp
+1-877-708-6486 (MITO)&nbsp
+info@mitocanada.org&nbsp
+Charity Business N° 81258 6667 RR0001&nbsp
+
+
+</b>
+
+</p>
+           
+
+
+
+
+
+
+
+
+      </div>
+ &nbsp<asp:LinkButton ID="PTD" runat="server" style="color:#7c6954; font-size:small" OnClick="PTD_Click">Privacy Policy & Terms and Conditons  </asp:LinkButton>
+      &nbsp;<asp:HyperLink style="color:#7c6954; font-size:small" ID = "HyperLink1" runat=server Text="Donate"
+	NavigateUrl="https://www.canadahelps.org/dn/10086" >
+	</asp:HyperLink>
+      </footer>
+
+</form>
+</html> 
