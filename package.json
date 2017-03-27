@@ -1,5 +1,5 @@
 {
-  "name": "comp308-w2017-angular2",
+  "name": "MitoNavigator",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -45,7 +45,7 @@
     "node": ">=6.0.0",
     "npm": ">=3.5.0"
   },
-  "description": "## Welcome to Lesson 8 - Intro to Angular 2",
+  "description": "##MitoNavigator",
   "main": "server.js",
   "devDependencies": {
     "@angular/cli": "^1.0.0-rc.0",
@@ -113,19 +113,12 @@
     "webpack-dev-server": "2.4.1",
     "webpack-merge": "^3.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CentennialCollege/COMP308-W2017-angular2.git"
-  },
+
   "keywords": [
     "NodeJS",
     "ExpressJS",
     "EJS"
   ],
-  "author": "Tom Tsiliopoulos",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CentennialCollege/COMP308-W2017-angular2/issues"
-  },
-  "homepage": "https://github.com/CentennialCollege/COMP308-W2017-angular2#readme"
+  "author": "MY",
+  "license": "ISC"
 }

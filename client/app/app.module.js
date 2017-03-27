@@ -46,7 +46,8 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/forms',
                             forms_1.FormsModule,
                             diseases_module_1.DiseasesModule,
                             router_1.RouterModule],
-                        declarations: [app_component_1.AppComponent],
+                        declarations: [app_component_1.AppComponent
+                        ],
                         bootstrap: [app_component_1.AppComponent]
                     }), 
                     __metadata('design:paramtypes', [])

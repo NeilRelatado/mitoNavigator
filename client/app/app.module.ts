@@ -15,7 +15,8 @@ import { DiseasesModule } from './diseases/diseases.module';
                   FormsModule,
                   DiseasesModule,
                   RouterModule],
-  declarations: [AppComponent],
+  declarations: [AppComponent
+  ],
   bootstrap:    [AppComponent]
 })
 export class AppModule { }

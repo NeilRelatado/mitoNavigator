@@ -1,23 +1,90 @@
 <% include ../partials/header.ejs %>
 
-    <!-- MAIN CONTENT -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-3 col-md-6">
+  <style type="text/css">
+    #rssOutput {
+      margin-left: 930px;
+    }
+  </style>
+
+  <!-- MAIN CONTENT -->
+  <div class="container" style="float:left;">
+    <div class="row">
+      <div>
 
         <my-app>Loading...</my-app>
+        </br>
 
-          <h1><%= title %></h1>
-          <% if(displayName) { %>
-            <h2>Welcome <%= title %>, <%= displayName %></h2>
-          <% } else { %>
-            <h4>Welcome to <%= title %></h4>
-          <% } %>
-        </div>
-      </div>
-    </div>
+        <b style="font-size:xx-large">Welcome to mitoNavigator</b>
+        <br/>
 
-<% include ../partials/angular.ejs %>
-<% include ../partials/footer.ejs %>
+        <table style="float:left;">
+
+          <tr>
+            <td><b style="font-size:medium">What is MitoNavigator </b>
+              <p>MitoNavigator is your first step in learning more about mitocondrial diseases. Here you can learn more about
+                mitocondrial diseases and organizations that are dedicated to finding a cure. </p>
 
 
+              <p style="border-style: solid; border-color: inherit; background-color:#7ac141; width: 836px;">
+                <b style="font-size:x-large;color:white;">General Information</b>
+                <br />
+                <!--
+        <asp:linkbutton runat="server" style="color:#7c6954;font-size:medium" OnClick="Unnamed1_Click">What is the Mitocondria</asp:linkbutton> <br />
+        <asp:linkbutton runat="server" style="color:#7c6954;font-size:medium" OnClick="Unnamed2_Click">Mitochondrial Disease / Dysfunction and Perserving Mitochondrial Health</asp:linkbutton> <br />
+        <asp:linkbutton runat="server" style="color:#7c6954;font-size:medium" OnClick="Unnamed3_Click">Who are we? </asp:linkbutton><br />
+        <asp:linkbutton runat="server" style="color:#7c6954;font-size:medium" OnClick="Unnamed4_Click">Genetics and Mitocondrial disease </asp:linkbutton><br />
+         <asp:linkbutton runat="server" style="color:#7c6954;font-size:medium" OnClick="Unnamed5_Click">Test </asp:linkbutton><br />
+           -->
+              </p>
+            </td>
+
+            <td>
+              <div style="float:left;border-style: solid; border-color: inherit; background-color:#7ac141; ">
+                <b style="font-size:x-large;color:white;">Find us on social media </b>
+                <br />
+                <a href="https://www.facebook.com/MitoCanada/" ID="HyperLink1">Facebook</a> &nbsp;
+                <a href="https://twitter.com/mitocanada?lang=en" ID="HyperLink2">Twitter</a> &nbsp;
+                <a href="https://www.linkedin.com/company/mitocanada-foundation" Text="Linkedin">Linkedin</a> &nbsp;
+              </div>
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+              <p style="width: 836px;">
+                <!-- start feedwind code -->
+                <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="18288/"></script>
+                <!-- end feedwind code -->
+              </p>
+              <br />
+            </td>
+
+            <td>
+              <div style="float:left;border-style: solid; border-color: inherit; background-color:#7ac141; ">
+                <a class="twitter-timeline" data-width="300" data-height="500" data-theme="light" href="https://twitter.com/MitoCanada">Tweets by MitoCanada</a>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </td>
+          </tr>
+
+        </table>
+
+        </span><br></div>
+
+    </div>&nbsp;
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+  </div>
+  </div>
+  </div>
+
+  <% include ../partials/angular.ejs %>
+    <% include ../partials/footer.ejs %>

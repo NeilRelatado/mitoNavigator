@@ -1,13 +1,10 @@
 <% include ../partials/header.ejs %>
 
-<div *ngIf="user">
 <h1>Hello {{displayName}}</h1>
 <ul>
-<li><a [routerLink]="['/diseases']">List Articles</a></li>
+<li><a [routerLink]="['/diseases']">List diseases</a></li>
 </ul>
-</div>
 
-</div>
 
 <% include ../partials/angular.ejs %>
 <% include ../partials/footer.ejs %>

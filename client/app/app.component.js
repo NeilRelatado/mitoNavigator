@@ -20,12 +20,11 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.name = 'Angular';
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "<h1>Hello {{name}}</h1>"
+                        template: "<h1> </h1>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

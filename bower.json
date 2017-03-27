@@ -1,9 +1,9 @@
 {
-  "name": "comp308-w2017-lesson8b-angular",
-  "description": "## Welcome to Lesson 8 - Intro to Angular 2 and MVC Revisited",
+  "name": "MitoNavigator",
+  "description": "## Welcome to MitoNavigator",
   "main": "server.js",
   "authors": [
-    "matt"
+    "MY"
   ],
   "license": "ISC",
   "keywords": [
@@ -11,7 +11,6 @@
     "ExpressJS",
     "EJS"
   ],
-  "homepage": "https://github.com/CentennialCollege/COMP308-W2017-Lesson8B-Angular",
   "ignore": [
     "**/.*",
     "node_modules",
