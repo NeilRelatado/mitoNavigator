@@ -8,15 +8,21 @@ import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routes';
 
 import { DiseasesModule } from './diseases/diseases.module';
+import { AuthenticationModule } from './authentication/authentication.module'
+import {AuthenticationService } from './authentication/authentication.service'
 
 @NgModule({
-  imports:      [BrowserModule,
-                  HttpModule,
-                  FormsModule,
-                  DiseasesModule,
-                  RouterModule],
-  declarations: [AppComponent
-  ],
-  bootstrap:    [AppComponent]
+  imports: [
+    BrowserModule,
+    HttpModule,
+    FormsModule,
+
+    DiseasesModule,
+   // AuthenticationModule,
+    RouterModule,
+    ],
+  declarations: [AppComponent],
+ 
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

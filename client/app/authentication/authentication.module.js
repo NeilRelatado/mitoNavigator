@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/common', '@angular/forms', '@angular/router', './diseases.routes', './diseases.component', './list/list.component'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/common', '@angular/forms', '@angular/router', './authentication.routes', './authentication.component', './signin/signin.component', './signup/signup.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,8 +10,8 @@ System.register(['@angular/core', '@angular/common', '@angular/forms', '@angular
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, common_1, forms_1, router_1, diseases_routes_1, diseases_component_1, list_component_1;
-    var DiseasesModule;
+    var core_1, common_1, forms_1, router_1, authentication_routes_1, authentication_component_1, signin_component_1, signup_component_1;
+    var AuthenticationModule;
     return {
         setters:[
             function (core_1_1) {
@@ -26,42 +26,41 @@ System.register(['@angular/core', '@angular/common', '@angular/forms', '@angular
             function (router_1_1) {
                 router_1 = router_1_1;
             },
-            function (diseases_routes_1_1) {
-                diseases_routes_1 = diseases_routes_1_1;
+            function (authentication_routes_1_1) {
+                authentication_routes_1 = authentication_routes_1_1;
             },
-            function (diseases_component_1_1) {
-                diseases_component_1 = diseases_component_1_1;
+            function (authentication_component_1_1) {
+                authentication_component_1 = authentication_component_1_1;
             },
-            function (list_component_1_1) {
-                list_component_1 = list_component_1_1;
+            function (signin_component_1_1) {
+                signin_component_1 = signin_component_1_1;
+            },
+            function (signup_component_1_1) {
+                signup_component_1 = signup_component_1_1;
             }],
         execute: function() {
-            //import { ViewComponent } from './view/view.component';
-            //import { EditComponent } from './edit/edit.component';
-            DiseasesModule = (function () {
-                function DiseasesModule() {
+            AuthenticationModule = (function () {
+                function AuthenticationModule() {
                 }
-                DiseasesModule = __decorate([
+                AuthenticationModule = __decorate([
                     core_1.NgModule({
                         imports: [
                             common_1.CommonModule,
                             forms_1.FormsModule,
-                            router_1.RouterModule.forChild(diseases_routes_1.DiseasesRoutes)
+                            router_1.RouterModule.forChild(authentication_routes_1.AuthenticationRoutes),
                         ],
                         declarations: [
-                            diseases_component_1.DiseasesComponent,
-                            //CreateComponent,
-                            //ViewComponent,
-                            //EditComponent,
-                            list_component_1.ListComponent
+                            authentication_component_1.AuthenticationComponent,
+                            signin_component_1.SigninComponent,
+                            signup_component_1.SignupComponent,
                         ]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], DiseasesModule);
-                return DiseasesModule;
+                ], AuthenticationModule);
+                return AuthenticationModule;
             }());
-            exports_1("DiseasesModule", DiseasesModule);
+            exports_1("AuthenticationModule", AuthenticationModule);
         }
     }
 });
-//# sourceMappingURL=diseases.module.js.map
+//# sourceMappingURL=authentication.module.js.map

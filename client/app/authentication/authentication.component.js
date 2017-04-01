@@ -1,4 +1,4 @@
-System.register(['@angular/core', './diseases.service'], function(exports_1, context_1) {
+System.register(['@angular/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,32 +10,28 @@ System.register(['@angular/core', './diseases.service'], function(exports_1, con
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, diseases_service_1;
-    var DiseasesComponent;
+    var core_1;
+    var AuthenticationComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (diseases_service_1_1) {
-                diseases_service_1 = diseases_service_1_1;
             }],
         execute: function() {
-            DiseasesComponent = (function () {
-                function DiseasesComponent() {
+            AuthenticationComponent = (function () {
+                function AuthenticationComponent() {
                 }
-                DiseasesComponent = __decorate([
+                AuthenticationComponent = __decorate([
                     core_1.Component({
-                        selector: 'diseases-app',
-                        template: '<router-outlet></router-outlet>',
-                        providers: [diseases_service_1.DiseasesService]
+                        selector: 'authentication',
+                        templateUrl: 'app/authentication/authentication.template.html',
                     }), 
                     __metadata('design:paramtypes', [])
-                ], DiseasesComponent);
-                return DiseasesComponent;
+                ], AuthenticationComponent);
+                return AuthenticationComponent;
             }());
-            exports_1("DiseasesComponent", DiseasesComponent);
+            exports_1("AuthenticationComponent", AuthenticationComponent);
         }
     }
 });
-//# sourceMappingURL=diseases.component.js.map
+//# sourceMappingURL=authentication.component.js.map

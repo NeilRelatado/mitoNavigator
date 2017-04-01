@@ -14,6 +14,7 @@ let diseasesController = require('../controllers/diseases');
 /* GET diseases List page. READ */
 router.get('/', (req, res, next) => {
   diseasesController.ReadDiseaseList(req, res);
+
 });
 
 //  GET the Disease Details page in order to add a new Disease

@@ -18,13 +18,15 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
+            // import { AuthenticationService } from './authentication/authentication.service';
+            // import { Router } from '@angular/router';
             AppComponent = (function () {
                 function AppComponent() {
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "<h1> </h1>"
+                        template: "<router-outlet></router-outlet>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

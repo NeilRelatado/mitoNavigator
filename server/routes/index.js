@@ -49,7 +49,7 @@ router.get('/WhoAreWe', (req, res, next) => {
 router.get('/api/diseases', (req, res, next) => {
   res.render('diseases/list', {
     title: "Diseases List",
-    diseases: '',
+    diseases: diseases,
     displayName: ""
   });
 });

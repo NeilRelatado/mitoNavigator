@@ -1,9 +1,9 @@
 <h1>Diseases</h1>
  <ul>
    <li *ngFor="let disease of diseases">
-     <a [routerLink]="['/diseases', disease._id]">{{disease.name}}</a>
+     <a [routerLink]="['/diseases', diseases._id]">{{diseases.name}}</a>
      <br>
-     <small>{{disease.type}}/{{disease.description}</small>
+     <small>{{diseases.type}}/{{diseases.description}</small>
    </li>
  </ul>
 

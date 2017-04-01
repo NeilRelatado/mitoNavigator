@@ -10,7 +10,12 @@
         <a href="/diseases/add" class="btn btn-primary"><i class="fa fa-plus"></i> Add a Disease</a>
         <br>
 
-        <select>
+            </br>
+        <my-app>Loading...</my-app>
+            </br>
+            </br>
+
+            <select>
             <option>Search</option>
             <% if (diseases.length > 0) { %>
               <% for (let count = 0; count < diseases.length; count++) { %>
@@ -21,67 +26,77 @@
             <% } %>
         </select>
 
-        <table class="table table-bordered table-striped table-hover">
-         
-          <tr>
-            <td><h class="text-center">Name</h></td>
-             <td></td>
-          </tr>
+            <table class="table table-bordered table-striped table-hover">
 
-          <tr>
-           <td><h class="text-center">Type</h></td>
-           <td></td>
-          </tr>
+              <tr>
+                <td>
+                  <h class="text-center">Name</h>
+                </td>
+                <td></td>
+              </tr>
 
-          <tr>
-            <td><h class="text-center">Description</h></td>
-            <td></td>
-          </tr>
+              <tr>
+                <td>
+                  <h class="text-center">Type</h>
+                </td>
+                <td></td>
+              </tr>
 
-          <tr>
-            <td><h class="text-center">Symptoms</h></td>
-            <td></td>
-          </tr>
+              <tr>
+                <td>
+                  <h class="text-center">Description</h>
+                </td>
+                <td></td>
+              </tr>
 
-          <tr>
-            <td><h class="text-center">References</h></td>
-            <td></td>
-          </tr>
+              <tr>
+                <td>
+                  <h class="text-center">Symptoms</h>
+                </td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <h class="text-center">References</h>
+                </td>
+                <td></td>
+              </tr>
 
 
-          <!-- Template Row -->
-          <% for (let count = 0; count < diseases.length; count++) { %>
-            <tr>
-              <td class="text-center">
-                <%= diseases[count].name %>
-              </td>
-              <td class="text-center">
-                <%= diseases[count].type %>
-              </td>
-              <td class="text-center">
-                <%= diseases[count].description %>
-              </td>
-              <td class="text-center">
-                <%= diseases[count].symptoms %>
-              </td>
-              <td class="text-center">
-                <%= diseases[count].references %>
-              </td>
+              <!-- Template Row -->
+              <% for (let count = 0; count < diseases.length; count++) { %>
+                <tr>
+                  <td class="text-center">
+                    <%= diseases[count].name %>
+                  </td>
+                  <td class="text-center">
+                    <%= diseases[count].type %>
+                  </td>
+                  <td class="text-center">
+                    <%= diseases[count].description %>
+                  </td>
+                  <td class="text-center">
+                    <%= diseases[count].symptoms %>
+                  </td>
+                  <td class="text-center">
+                    <%= diseases[count].references %>
+                  </td>
 
-              <td class="text-center">
-                <a href="/diseases/<%= diseases[count]._id %>" class="btn btn-primary">
-                  <i class="fa fa-pencil-square-o"></i> Edit</a>
-              </td>
-              <td class="text-center">
-                <a href="/diseases/delete/<%= diseases[count]._id %>" class="btn btn-danger">
-                  <i class="fa fa-trash-o"></i> Delete</a>
-              </td>
-            </tr>
-            <% } %>
+                  <td class="text-center">
+                    <a href="/diseases/<%= diseases[count]._id %>" class="btn btn-primary">
+                      <i class="fa fa-pencil-square-o"></i> Edit</a>
+                  </td>
+                  <td class="text-center">
+                    <a href="/diseases/delete/<%= diseases[count]._id %>" class="btn btn-danger">
+                      <i class="fa fa-trash-o"></i> Delete</a>
+                  </td>
+                </tr>
+                <% } %>
 
-        </table>
+            </table>
       </div>
     </div>
   </div>
-
+  <% include ../partials/angular.ejs %>
   <% include ../partials/footer.ejs %>
