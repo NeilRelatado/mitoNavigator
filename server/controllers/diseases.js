@@ -35,11 +35,11 @@ module.exports.DisplayAdd = (req, res) => {
 module.exports.CreateDisease = (req, res) => {
   let newDisease = disease({
     "name": req.body.name,
-    "type": req.body.cost,
-    "description": req.body.rating,
+    "type": req.body.type,
+    "description": req.body.description,
     "symptoms": req.body.symptoms,
-    "references": req.body.references
-
+    "references": req.body.references,
+    "tags": req.body.tags
   });
 
   disease.create(newDisease, (err, disease) => {
@@ -87,10 +87,11 @@ module.exports.UpdateDisease = (req, res) => {
   let updatedDisease = disease({
     "_id": id,
     "name": req.body.name,
-    "type": req.body.cost,
-    "description": req.body.rating,
+    "type": req.body.type,
+    "description": req.body.description,
     "symptoms": req.body.symptoms,
-    "references": req.body.references
+    "references": req.body.references,
+    "tags": req.body.tags
   });
 
   disease.update({ _id: id }, updatedDisease, (err) => {

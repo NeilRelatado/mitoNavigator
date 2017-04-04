@@ -5,7 +5,7 @@ let favicon = require('serve-favicon');
 let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
-
+let nodemailer = require("nodemailer");
 // modules for authentication
 let session = require('express-session');
 let passport = require('passport');

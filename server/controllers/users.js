@@ -1,6 +1,8 @@
 let mongoose = require('mongoose');
 let passport = require('passport');
 
+let mailerContoller = require('./mailing');
+
 // define the user model
 let UserModel = require('../models/users');
 let User = UserModel.User; // alias for User Model - User object
