@@ -1,0 +1,13 @@
+<section *ngIf=" && disease.creator">
+	<h1>{{disease.name}}</h1>
+
+	<div *ngIf="allowEdit">
+	    <a [routerLink]="['/diseases', disease._id, 'edit']">edit</a>
+	    <button (click)="delete()">delete</button>
+	</div>
+	<small>
+	   
+	</small>
+
+	<p>{{diseases.description}}</p>
+</section>

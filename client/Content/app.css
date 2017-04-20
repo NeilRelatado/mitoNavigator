@@ -1,0 +1,10 @@
+/* Custom CSS goes here */
+body {
+  padding-bottom: 70px;
+  }
+
+ img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}

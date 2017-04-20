@@ -1,0 +1,170 @@
+<% include ../partials/header.ejs %>
+
+  <!-- MAIN CONTENT -->
+  
+        <h3>Mitochondrial List </h3>
+
+
+
+        </br>
+        <my-app>Loading...</my-app>
+        </br>
+        </br>
+
+        <form>
+          <select name="primaryDropdown" id="primaryDiseaseDropdown" onchange="dropdownChange();">
+            <option value="None">Search</option>
+            <% if (diseases.length > 0) { %>
+              <% for (let count = 0; count < diseases.length; count++) { %>
+              <option 
+              value = <%= diseases[count]._id %>
+              data-name = "<%= diseases[count].name %>"
+              data-type = "<%= diseases[count].type %>"
+              data-description = "<%= diseases[count].description %>"
+              data-symptoms = "<%= diseases[count].symptoms %>"
+              data-references = "<%= diseases[count].references %>"
+               >
+                <%= diseases[count].name %>
+              </option>
+              <% } %>
+            <% } %>
+        </select>
+        </form>
+        </br>
+
+
+        <script>
+          var dropdownDisease = document.getElementById("primaryDiseaseDropdown");
+          var strDisease = dropdownDisease.options[dropdownDisease.selectedIndex].value;
+          var pageDiseaseName = document.getElementById("DiseaseName");
+          var pageDiseaseType = document.getElementById("DiseaseType");
+          var pageDiseaseDescription = document.getElementById("DiseaseDescription");
+          var pageDiseaseSymptoms = document.getElementById("DiseaseSymptoms");
+          var pageDiseaseReferences = document.getElementById("DiseaseReferences");
+
+          function dropdownChange() {
+
+            strDisease = dropdownDisease.options[dropdownDisease.selectedIndex].value;
+            attributes = dropdownDisease.options[dropdownDisease.selectedIndex];
+
+            if (strDisease == "None") {
+              document.getElementById("DiseaseName").textContent = "Select an Option";
+              document.getElementById("DiseaseType").textContent = "Select an Option";
+              document.getElementById("DiseaseDescription").textContent = "Select an Option";
+              document.getElementById("DiseaseSymptoms").textContent = "Select an Option";
+              document.getElementById("DiseaseReferences").textContent = "Select an Option";
+            } else {
+              document.getElementById("DiseaseName").textContent = attributes.getAttribute('data-name');
+              document.getElementById("DiseaseType").textContent = attributes.getAttribute('data-type');
+              document.getElementById("DiseaseDescription").textContent = attributes.getAttribute('data-description');
+              document.getElementById("DiseaseSymptoms").textContent = attributes.getAttribute('data-symptoms');
+              document.getElementById("DiseaseReferences").textContent = attributes.getAttribute('data-references');
+
+
+              //window.location.replace("http://stackoverflow.com");
+            }
+          };
+        </script>
+
+        <table class="table table-bordered table-striped table-hover">
+
+          <tr>
+            <td>
+              <h class="text-center">Name</h>
+            </td>
+            <td>
+              <p id="DiseaseName">Select an Option</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h class="text-center">Type</h>
+            </td>
+            <td>
+              <p id="DiseaseType">Select an Option</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h class="text-center">Description</h>
+            </td>
+            <td>
+              <p id="DiseaseDescription">Select an Option</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h class="text-center">Symptoms</h>
+            </td>
+            <td>
+              <p id="DiseaseSymptoms">Select an Option</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h class="text-center">References</h>
+            </td>
+            <td>
+              <p id="DiseaseReferences">Select an Option</p>
+            </td>
+          </tr>
+        </table>
+
+   
+
+
+  </br>
+
+  <div>
+    <% if(typeof displayName == 'string' && displayName && userHigher == "Admin" && userHigher) { %>
+      <a href="/diseases/add" class="btn btn-primary"><i class="fa fa-plus"></i> Add a Disease</a>
+        <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th class="text-center">Name</th>
+                  <th class="text-center">Type</th>
+                  <th class="text-center">Description</th>
+                  <th class="text-center">Symptoms</th>
+                  <th class="text-center">References</th>
+                  <th class="text-center">Tags</th>
+                  <th class="text-center">Edit</th>
+                  <th class="text-center">Delete</th>
+                </tr>
+                </thead>
+                <tbody id="myTable">
+                <!-- Template Row -->
+                <% for (let count = 0; count < diseases.length; count++) { %>
+                <tr>
+                  <td><%= diseases[count].name %></td>
+                  <td class="text-center">$<%= diseases[count].type %></td>
+                   <td class="text-center">$<%= diseases[count].description %></td>
+                    <td class="text-center">$<%= diseases[count].symptoms %></td>
+                  <td class="text-center"><%= diseases[count].references %></td>
+                   <td class="text-center">$<%= diseases[count].tags %></td>            
+                  <td class="text-center">
+                    <a class="btn btn-primary" href="/diseases/<%= diseases[count]._id %>" role="button"><i class="fa fa-pencil-square-o"></i> Edit</a>
+                  </td>
+                  <td class="text-center">
+                     <a class="btn btn-danger" href="/diseases/delete/<%= diseases[count]._id %>" role="button"><i class="fa fa-trash-o"></i> Delete</a>
+                  </td>
+                </tr>
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+           <div class="col-md-offset-1 col-md-10 text-center">
+            <ul class="pagination pagination-lg pager" id="myPager"></ul>
+          </div>
+      <% } else { %>
+
+        <% } %>
+  </div>
+
+  <% include ../partials/angular.ejs %>
+    <% include ../partials/footer.ejs %>

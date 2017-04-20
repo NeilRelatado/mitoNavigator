@@ -1,0 +1,45 @@
+<% include ../partials/header.ejs %>
+
+    <!-- MAIN CONTENT -->
+
+          <h1><%= title %></h1>
+            <form class="form" method="post">
+              <div class="form-group">
+                <label for="NameTextField">Name</label>
+                <input type="text" class="form-control" id="NameTextField"
+                placeholder="Name" name="name" value="<%= diseases.name %>" required>
+              </div>
+              <div class="form-group">
+                <label for="TypeTextField">Type</label>
+                <input type="text" class="form-control" id="TypeTextField"
+                placeholder="Type" name="type" value="<%= diseases.type %>"  required>
+              </div>
+              <div class="form-group">
+                <label for="RatingTextField">Description</label>
+                <input type="text" class="form-control" id="DescriptionTextField"
+                placeholder="Description " name="description" value="<%= diseases.description %>"  required>
+              </div>
+              <div class="form-group">
+                <label for="RatingTextField">Symptoms</label>
+                <input type="text" class="form-control" id="SymptomsTextField"
+                placeholder="Symptoms" name="symptoms" value="<%= diseases.symptoms %>"  required>
+              </div>
+              
+               <div class="form-group">
+                <label for="ReferencesTextField"> References </label>
+                <input type="text" class="form-control" id="ReferencesTextField"
+                placeholder="References" name="references" value="<%= diseases.references %>"  required>
+              </div>
+
+              <div class="form-group">
+                <label for="ReferencesTextField"> Tags </label>
+                <input type="text" class="form-control" id="ReferencesTextField"
+                placeholder="References" name="references" value="<%= diseases.tags %>"  required>
+              </div>
+
+              <input type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"></i> Submit</button>
+              <a href="/diseases" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
+            </form>
+  
+
+<% include ../partials/footer.ejs %>
